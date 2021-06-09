@@ -11,7 +11,7 @@ smtpData = {
 }
 apiData = {
     'url': 'https://domain-availability.whoisxmlapi.com/api/v1',
-    'key': '--API_KEX--',
+    'key': '--API_KEY--',
     'mode': 'DNS_AND_WHOIS',
     'credits': 'WHOIS',
     'outputFormat': 'JSON',
