@@ -1,4 +1,4 @@
-##EASY Domain Check Notification
+## EASY Domain Check Notification
 
 This is a simple python script for monitoring occupied domains in the market.
 When a domain becomes available, an email will be sent to the recipient email (SMTP).
