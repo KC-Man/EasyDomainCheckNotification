@@ -5,9 +5,9 @@
 import sys
 import config
 
-from Classes import EDCN
+from edcn import domain_checker
 
-dClass = EDCN.EasyDomainCheckNotification(config.recipientMail, config.domains, config.apiData, config.smtpData)
+dClass = domain_checker.DomainChecker(config.recipientMail, config.domains, config.apiData, config.smtpData)
 dClass.check_status()
 
 sys.exit()

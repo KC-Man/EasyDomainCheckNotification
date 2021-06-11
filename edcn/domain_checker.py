@@ -9,7 +9,7 @@ import smtplib
 from email.message import EmailMessage
 
 
-class EasyDomainCheckNotification:
+class DomainChecker:
     def __init__(self, email, domains, api_data, smtp_data, mail_debug_mode=0):
         self.email = email
         self.domains = domains
