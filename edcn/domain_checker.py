@@ -53,7 +53,7 @@ class DomainChecker:
                     return False
 
         except urllib.error.URLError as error:
-            print('Failed to fetch API for Domain: ' + dname)
+            print(f'Failed to fetch API for Domain: {dname}')
             print(error.reason)
             return False
 
@@ -85,6 +85,6 @@ class DomainChecker:
             smtp_obj.login(sender, pw)
             smtp_obj.sendmail(sender, recipient, msg.as_string())
             smtp_obj.quit()
-            print("Successfully sent email")
+            print(f'Successfully sent email to {recipient}')
         except smtplib.SMTPException:
-            print("Error: unable to send email")
+            print(f'Error: unable to send email to {recipient}')
